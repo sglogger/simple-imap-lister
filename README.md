@@ -24,4 +24,5 @@ Data: ['(\\HasNoChildren \\Drafts) "/" Drafts', '(\\NoInferiors) NIL INBOX', '(\
 ```
 
 Just add the username and password with a space/tab separated in the config file. 
+It performs the logins sequentially - it's not about performance here :)
 Yeah, I know - this is insecure - but it's just a proof of concept :)
