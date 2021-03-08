@@ -12,7 +12,7 @@ def open_connection(username,password,verbose=False):
     connection = imaplib.IMAP4_SSL(hostname)
 
     if verbose: print ('Logging in as', username)
-	connection.login(username,password)
+	connection.login(username,password) 
     return connection
 
 
