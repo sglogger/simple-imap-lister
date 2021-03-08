@@ -8,11 +8,11 @@ import io
 def open_connection(username,password,verbose=False):
     # Connect to the server
     hostname = 'imaps.bluewin.ch';
-    if verbose: print 'Connecting to', hostname
+    if verbose: print ('Connecting to', hostname)
     connection = imaplib.IMAP4_SSL(hostname)
 
-    if verbose: print 'Logging in as', username
-    connection.login(username, password)
+    if verbose: print ('Logging in as', username)
+	connection.login(username,password)
     return connection
 
 
